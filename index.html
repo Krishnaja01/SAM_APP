@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sample Application</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script scr="./script.js"></script>
 </head>
-<body onload="getCount()" class="app-style">
-  <p class="greetingButton-style">HELLO WORLD...!</p>
-  <button class="greetingButton-style"
-  onclick="changeGreeting()">CHANGE GREETING</button>
-  <p id="visitorCountTxt">VISITOR COUNT: 5</p>
+<body onload="getCount()">
+  <div class="flex flex-col justify-center items center h-screen" >
+ <p class="font-bold text-2xl py-4" 
+ id="greetingTxt">Hello World..!!</p> 
+  <button class ="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 py-6 rounded" onclick="changeGreeting()">CHANGE GREETING</button>
+  <p class="font-semibold text-lg py-4"
+   id="visitorCountTxt">VISITOR COUNT: 5</p>
+  </div>
 </body>
 </html>
